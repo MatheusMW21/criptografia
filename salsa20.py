@@ -21,3 +21,13 @@ class SalsaHelper():
         ciphertext = msg[8:];
         cipher = Salsa20.new(key=self.key, nonce=msg_nonce);
         return cipher.decrypt(ciphertext).decode("utf-8");
+if __name__ == '__main__':
+    s = SalsaHelper()
+    text = 'are you afraid of the dark?'
+    encrypted = s.encrypt(text)
+    decrypted = s.decrypt(text)
+
+    print('Texto: ',text)
+    print('Criptografado: ', encrypted)
+    print('Descriptografado: ', decrypted)
+
