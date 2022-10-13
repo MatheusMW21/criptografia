@@ -9,8 +9,8 @@ O AES Helper por muito tempo foi um algoritmo de Criptografia praticamente 'inde
 Os dados são empilhados em uma matriz 4x4 de 128 bits (16 bytes). Utilizando-se certas operações vinculadas que realizam o embaralhamento em cada estado. Sendo eles:
 - Expansão de Chave e AddRoundKey;
 - SubBytes;
--ShiftRows;
--MixColumns.
+- ShiftRows;
+- MixColumns.
 <img height = "200em" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/AES_%28Rijndael%29_Round_Function.png/250px-AES_%28Rijndael%29_Round_Function.png"/>
 
 # Salsa20
