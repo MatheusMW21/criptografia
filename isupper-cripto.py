@@ -9,13 +9,12 @@ def determinaOpcao():
             print("Digite 'c' ou 'd'.")
 def determinaChave():
 
-    chave = 0
+def determinaChave():
+
+    chave = random.randint(1, 26)
     while True:
-        chave = int(input('Digite o valor da chave (1-26)\n'))
         if 1<= chave <= 26:
             return chave
-        else:
-            print('Digite um valor válido entre 1 e 26.')
 
 def determinaMensagem(opcao, mensagem, chave):
     
