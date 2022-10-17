@@ -4,6 +4,10 @@ Neste repositório contém testes que serão utilizados em um projeto da faculda
 # Conceito
 A criptografia envolve a conversão de texto simples legível por humanos em texto incompreensível, o que é conhecido como texto cifrado. Essencialmente, isso significa pegar dados legíveis e transformá-los de forma que pareçam aleatórios. A criptografia envolve o uso de uma chave criptográfica, um conjunto de valores matemáticos com os quais tanto o remetente quanto o destinatário concordam. O destinatário usa a chave para descriptografar os dados, transformando-os de volta em texto simples e legível.
 
+# Cifra de César
+Primordialmente, na Idade Antiga, a Cifra de César, conhecida também como Troca de César, Cifra de Troca ou Código de César, foi usada pelo próprio Júlio César como forma de codificar suas mensagens enviadas para seus Generais de Guerra, com a finalidade de esconder informações de tropas inimigas. Ficou conhecida como um sistema de criptografia simples, usando a técnica de substituição. Consiste na substituição da letra por 3 posições à frente, por exemplo, a substiuição de A seria D, de B seria E e assim sucessivamente.<br><br>
+<img  height = "200em" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/320px-Caesar3.svg.png">
+
 # AES helper
 O AES Helper por muito tempo foi um algoritmo de Criptografia praticamente 'indescifrável', podendo suportar chaves de 128, 192 e 256 bits, o AES utilizou de um sistema de permutações e combinações possíveis para 256 bits ou seja 2^256.
 Os dados são empilhados em uma matriz 4x4 de 128 bits (16 bytes). Utilizando-se certas operações vinculadas que realizam o embaralhamento em cada estado. Sendo eles:
