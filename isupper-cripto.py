@@ -1,3 +1,5 @@
+import random
+
 def determinaOpcao():
     #Função que pergunta c ou d, e garante loop
 
