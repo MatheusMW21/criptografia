@@ -31,3 +31,21 @@ O código de autenticação de mensagem Poly1305 garante:
 - Verficação de integridade 
 - Autenticidade dos dados
 Uma característica muito importante do ChaCha20 frente ao AES é custo computacional baixo para dispositivos móveis ou com baixa disponibilidade energética, sendo 5 vezes mais eficiente neste quesito se comparando ao AES.
+
+# RSA
+O RSA é um dos primeiros sistemas de criptografia que utilizam de chaves públicas. E nesse caso, a chave de criptografia é diferente a decriptografia que é uma chave privada. No RSA, esta assimetria é baseada na dificuldade prática da fatorização do produto de dois números primos grandes, o "problema de fatoração".
+- Geração de chaves:
+1 . Escolha de forma aleatória dois números primos grandes p e q, da ordem 10^100 no mínimo
+2 . Calcule n = pq
+3 . Calcule a Função totiente de Euler n: phi(n) = (p-1)(q-1)
+4 . Escolha um número inteiro e tal que 1 < e < phi(n) sejam relativamente primos entre si
+5 . Calcule d de forma que d == 1 (mod phi(n))
+- Por final temos: 
+A chave pública: o par (n, e)
+A chave privada: a tripla (p, q, d)
+
+- Encriptação:
+<img height = 30em src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/e50dd9804137b10a7854b48934c5b920ef26b78b">
+
+- Decriptação:
+<img height = 30em src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/1d2604ec76ac085c320956536de0b16f6a6f59af">
