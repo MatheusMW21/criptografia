@@ -4,7 +4,6 @@ números e utilizados para gerar as chaves públicas e privadas
 '''
 
 import random
-from math import gcd
 
 def gcd (a, b): #mdc (máximo divisor comum)
     #Essa função roda o Euclidean Algorithm e retorna o mdc de 'a' e 'b'
@@ -67,7 +66,7 @@ def chooseKeys ():
     #escreva as chaves publicas n e e em um arquivo
     f_public = open('public_keys.txt', 'w')
     f_public.write = (str(n) + '\n')
-    f_public.write = (str(d) + '\n')
+    f_public.write = (str(e) + '\n')
     f_public.close()
 
     f_private = open('private_keys.txt', 'w')
